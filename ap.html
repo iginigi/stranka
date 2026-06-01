@@ -1,61 +1,172 @@
-<html>
+<!DOCTYPE html>
+<html lang="sk">
 <head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Autorské práva</title>
 <link rel="icon" type="image/png" href="wifi.png">
+<style>
+    body {
+        font-size: 18px;
+        -webkit-text-stroke: 0.25px black;
+        background-image: url('bg.jpg');
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        color: white;
+        margin: 0;
+        padding: 20px;
+        font-family: sans-serif;
+    }
+
+    a:link { color: yellow; }
+    a:visited { color: orange; }
+
+    /* Centers the main content and prevents it from getting infinitely wide */
+    .container {
+        max-width: 1200px;
+        margin: 0 auto; 
+    }
+
+    h2, h3 {
+        text-align: center;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    /* This creates the responsive side-by-side layout */
+    .flex-row {
+        display: flex;
+        flex-wrap: wrap; /* Allows stacking on small screens */
+        gap: 40px;
+        margin-bottom: 40px;
+        align-items: flex-start;
+    }
+
+    /* Styling for the dark blue text boxes */
+    .info-box {
+        background-color: #06132E;
+        border: 3px solid white;
+        padding: 20px;
+        flex: 1 1 300px; /* Grows and shrinks, base width 300px */
+        max-width: 450px;
+        line-height: 1.8;
+        font-weight: bold;
+    }
+
+    /* Styling for the text next to the boxes */
+    .text-content {
+        flex: 2 1 400px; /* Takes up the remaining space */
+        font-weight: bold;
+    }
+
+    .text-content ol {
+        list-style-position: inside;
+        padding-left: 10px;
+    }
+
+    .copyright-img {
+        float: right;
+        margin-left: 20px;
+        max-width: 150px; /* Ensures the gif doesn't get too big */
+    }
+
+    /* Bottom tables styling */
+    .bottom-table {
+        border: 3px solid white;
+        border-collapse: collapse;
+        width: 100%;
+        max-width: 900px;
+        margin: 0 auto 30px auto; /* Centers the tables */
+        background-color: #06132E;
+        text-align: left;
+    }
+
+    .bottom-table th, .bottom-table td {
+        padding: 15px;
+        border: 1px solid white; /* Adds subtle borders inside the table */
+    }
+
+    .footer-links {
+        text-align: center;
+        margin-top: 50px;
+        font-weight: bold;
+    }
+</style>
 </head>
-<body align='center' style= "font-size: 18px;-webkit-text-stroke: 0.25px black; background-image: url('bg.jpg'); background-size: cover; background-position: center; background-attachment: fixed;" text="white" link="yellow" vlink="orange">
-<h2 align='center'>AUTORSKÉ PRÁVO</h2>
-<b><p style="padding-left: 450px;"><table align="left" border="3" cellpadding="5" cellspacing="0" hspace="20" style="background-color: 06132E;"><tr><td>Autorské právo poskytuje príslušnému<br><br> vlastníkovi výlučné právo na používanie daného diela<br><br> (s určitými výnimkami). Keď niekto vytvorí pôvodné dielo,<br><br> ktoré je obsahom fyzického média,<br><br> automaticky k nemu nadobúda autorské práva.</td></tr></table></p></b>
+<body>
 
-<b><p align='left'>Autorským právom je možné chrániť mnohé diela. Patria medzi ne napríklad:</p>
+<div class="container">
+    <h2>AUTORSKÉ PRÁVO</h2>
 
-    <ol align='left' style="margin-left: 450px; list-style-position: inside;"><li>audiovizuálne diela
-        <li>zvukové nahrávky a hudobné skladby
-            <li>písomné diela
-                <li>vizuálne diela
-                    <li>videohry a počítačový softvér
-                        <li>dramatické diela</ol></b>
-<br>
-<b><p style="padding-left: 450px;"><table align="left" border="3" cellpadding="5" cellspacing="0" hspace="20" style="background-color: #06132E;"><tr><td>Držitelia autorských práv majú právo kontrolovať<br><br><br> väčšinu prípadov použitia svojich diel.<br><br><br> Za určitých okolností je možné<br><br><br> použiť dielo chránené autorskými právami<br><br><br> bez porušenia jeho autorských práv.</td></tr></table></p></b>
-<b><p align='left'>Ak nemáte povolenie používať dielo chránené autorskými právami,<br> váš obsah môže byť odstránený, a to aj v týchto prípadoch:</p></b>
-    <br><img style="padding-right: 70px;" src="copyright.gif" align='right'>
-<b><ol align='left' style="margin-left: 450px; list-style-position: inside;"><b>
-<li>Uviedli ste meno a názov diela držiteľa autorských práv.
-    <li>Obsah ste si kúpili vrátane fyzickej alebo digitálnej kópie.
-        <li>Daný obsah vám neprináša zisk.
-            <li>Podobný obsah ste videli inde na internete.
-                <li>Obsah ste svojpomocne nahrali z televízie, rádia alebo v kine.
-                    <li>Obsah ste svojpomocne skopírovali z učebnice, filmového plagátu alebo fotky.
-                        <li>Uviedli ste, že „akékoľvek porušenie autorských práv je neúmyselné“.</ol><br>
-<h3>Sťahovanie a šírenie</h3>
-<table border="3" cellpadding="5" cellspacing="0" align="center" style="margin-bottom: 20px; text-align: left; max-width: 900px; background-color: #06132E;">
-    <tr>
-        <th>Sťahovanie (Vyhotovenie kópie)</th>
-    </tr>
-    <tr>
-        <td>Pre vlastnú potrebu: Sťahovanie filmov, seriálov alebo hudby pre osobnú, nekomerčnú potrebu je na Slovensku legálne výhradne vtedy, ak pochádza z legálneho zdroja. Sťahovanie z neautorizovaných úložísk a pirátskych stránok porušuje zákon.</td>
-    </tr>
-    <tr>
-        <td>Výnimka (Softvér a hry): Počítačové programy, aplikácie a videohry majú v zákone špeciálny režim. Ich sťahovanie z neoficiálnych zdrojov (cracknuté verzie) je nelegálne vždy, aj keď ich máte iba pre seba.</td>
-    </tr>
-</table>
+    <div class="flex-row">
+        <div class="info-box">
+            Autorské právo poskytuje príslušnému vlastníkovi výlučné právo na používanie daného diela (s určitými výnimkami). Keď niekto vytvorí pôvodné dielo, ktoré je obsahom fyzického média, automaticky k nemu nadobúda autorské práva.
+        </div>
+        <div class="text-content">
+            <p>Autorským právom je možné chrániť mnohé diela. Patria medzi ne napríklad:</p>
+            <ol>
+                <li>audiovizuálne diela</li>
+                <li>zvukové nahrávky a hudobné skladby</li>
+                <li>písomné diela</li>
+                <li>vizuálne diela</li>
+                <li>videohry a počítačový softvér</li>
+                <li>dramatické diela</li>
+            </ol>
+        </div>
+    </div>
 
-<table border="3" cellpadding="5" cellspacing="0" align="center" style="margin-bottom: 30px; text-align: left; max-width: 900px; background-color: 06132E;">
-    <tr>
-        <th>Šírenie (Nahrávanie, zdieľanie, distribúcia)</th>
-    </tr>
-    <tr>
-        <td>Prísny zákaz: Akékoľvek verejné šírenie, nahrávanie (upload) na úložiská, posielanie skupinám ľudí alebo uverejňovanie na vlastnom webe bez licencie je nelegálne.</td>
-    </tr>
-    <tr>
-        <td>Postihy: Neoprávnené šírenie chránených diel zakladá občianskoprávnu zodpovednosť (náhrada škody) a pri väčšom rozsahu napĺňa skutkovú podstatu trestného činu porušovania autorského práva podľa Trestného zákona.</td>
-    </tr>
-</table>
+    <div class="flex-row">
+        <div class="info-box">
+            Držitelia autorských práv majú právo kontrolovať väčšinu prípadov použitia svojich diel.<br><br>
+            Za určitých okolností je možné použiť dielo chránené autorskými právami bez porušenia jeho autorských práv.
+        </div>
+        <div class="text-content">
+            <img src="copyright.gif" alt="Do not copy" class="copyright-img">
+            <p>Ak nemáte povolenie používať dielo chránené autorskými právami, váš obsah môže byť odstránený, a to aj v týchto prípadoch:</p>
+            <ol>
+                <li>Uviedli ste meno a názov diela držiteľa autorských práv.</li>
+                <li>Obsah ste si kúpili vrátane fyzickej alebo digitálnej kópie.</li>
+                <li>Daný obsah vám neprináša zisk.</li>
+                <li>Podobný obsah ste videli inde na internete.</li>
+                <li>Obsah ste svojpomocne nahrali z televízie, rádia alebo v kine.</li>
+                <li>Obsah ste svojpomocne skopírovali z učebnice, filmového plagátu alebo fotky.</li>
+                <li>Uviedli ste, že „akékoľvek porušenie autorských práv je neúmyselné“.</li>
+            </ol>
+        </div>
+    </div>
 
-<div style="text-align: center;">
-    <a href='os.html'>OTVORENÉ SYSTÉMY</a> <br><br>
-    <a href='zdroje.html'>ZDROJE</a> <br>
-<p> </p>
+    <h3>Sťahovanie a šírenie</h3>
+    
+    <table class="bottom-table">
+        <tr>
+            <th>Sťahovanie (Vyhotovenie kópie)</th>
+        </tr>
+        <tr>
+            <td>Pre vlastnú potrebu: Sťahovanie filmov, seriálov alebo hudby pre osobnú, nekomerčnú potrebu je na Slovensku legálne výhradne vtedy, ak pochádza z legálneho zdroja. Sťahovanie z neautorizovaných úložísk a pirátskych stránok porušuje zákon.</td>
+        </tr>
+        <tr>
+            <td>Výnimka (Softvér a hry): Počítačové programy, aplikácie a videohry majú v zákone špeciálny režim. Ich sťahovanie z neoficiálnych zdrojov (cracknuté verzie) je nelegálne vždy, aj keď ich máte iba pre seba.</td>
+        </tr>
+    </table>
+
+    <table class="bottom-table">
+        <tr>
+            <th>Šírenie (Nahrávanie, zdieľanie, distribúcia)</th>
+        </tr>
+        <tr>
+            <td>Prísny zákaz: Akékoľvek verejné šírenie, nahrávanie (upload) na úložiská, posielanie skupinám ľudí alebo uverejňovanie na vlastnom webe bez licencie je nelegálne.</td>
+        </tr>
+        <tr>
+            <td>Postihy: Neoprávnené šírenie chránených diel zakladá občianskoprávnu zodpovednosť (náhrada škody) a pri väčšom rozsahu napĺňa skutkovú podstatu trestného činu porušovania autorského práva podľa Trestného zákona.</td>
+        </tr>
+    </table>
+
+    <div class="footer-links">
+        <a href='os.html'>OTVORENÉ SYSTÉMY</a> <br><br>
+        <a href='zdroje.html'>ZDROJE</a> <br>
+    </div>
 </div>
+
 </body>
 </html>
